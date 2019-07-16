@@ -3,7 +3,7 @@
   
 }
 body {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 14px;
     background:  hsl(218, 28%, 13%);
@@ -210,6 +210,14 @@ ul li {
     left:50%;
     margin-left: -30%;
 }
+.contact-form-mobile{
+    width: 98%;
+    padding: 3em; 
+    border-radius: 20px;
+    text-align: center;
+    line-height: 2em;
+    background: hsl(217, 28%, 15%);
+}
 .input-holder > input {
     width:60%;
     height: 40px;
@@ -245,13 +253,134 @@ footer ul li {
     margin-left: 1em;
 }
 
+
+
+.options a{
+    display: block;
+    padding: 0.5em;
+}
 .contact-options {
-    margin-bottom: 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    margin-bottom: 2em;
 }
 
 .contact{
     width: 11%;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    #navbar {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0;
+    }
+    .intro-content-box {
+        width: 100%;
+    }
+    section {
+        padding-left: 1em;
+        padding-right:1em;
+    }
+    .intro:after {
+        background-image: url('./images/bg-curvy-mobile.svg') ;
+        bottom: 280px;
+    }
+    .wrapper-row {
+        flex-direction: column;
+        margin-top:0;
+    }
+    .features-col {
+        margin:0;
+        margin-top: 2em;
+        width: 100%;
+    }
+
+    .medium-row-width {
+        margin-top: 0;
+    }
+    .details-content {
+        width: 100%;
+        text-align: center
+    }
+    .details-content h1 {
+        line-height: 1.5em;
+    }
+    .feedback-card {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .contact-form {
+        margin:auto;
+        width:90%;
+        position: unset;
+    }
+    .contact-form input {
+        width: 100%;
+    }
+    .about, .contact, .social-media {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .options ul {
+        text-align: left;
+    }
+    .options ul li {
+        text-align: left;
+        margin:0;
+        width: 100%;
+    }
+    .social-media{
+        margin-top: 2em;
+        padding-left: 0;
+    }
+    /* .contact-form-mobile {
+        display: block;
+    } */
+}
+
+@media screen and (max-width: 800px) {
+    #product-details-section {
+        padding-top: 0;
+    }
+    
+    .medium-row-width {
+        flex-direction: column;
+        margin-top:0;
+    }
+    .details-content {
+        width: 100%;
+        text-align: center;
+    }
+    .feedback-card {
+        width: 100%;
+        margin-top: 2em;
+    }
+    .contact-form {
+        margin:auto;
+        width:90%;
+        position: unset;
+    }
+    .about,  .contact, .social-media {
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .social-media{
+        margin-top: 2em;
+        padding-left: 0;
+    }
+
+    .wrapper-row {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .features-col {
+        width:60%;
+        margin-top: 2em;
+    }
+    .intro:after {
+        bottom: 300px;
+    }
 }
