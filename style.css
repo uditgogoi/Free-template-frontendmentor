@@ -200,15 +200,19 @@ ul li {
 .contact-form {
     margin: auto;
     width: 60%;
-    padding: 4em;
+    padding: 3em; 
     border-radius: 20px;
     text-align: center;
     line-height: 2em;
     background: hsl(217, 28%, 15%);
+    position: absolute;
+    top: -40%;
+    left:50%;
+    margin-left: -30%;
 }
 .input-holder > input {
     width:60%;
-    height: 35px;
+    height: 40px;
     border:none;
     padding: 5px 30px;
     border-radius: 20px;
@@ -217,14 +221,37 @@ ul li {
 footer {
     background: hsl(216, 53%, 9%);
     padding-top: 6em;
+    margin-top: 20%;
+    position: relative;
+    padding-bottom: 6em;
 }
 .footer-row {
     display: flex;
     justify-content: space-around;
+    align-items: baseline;
 }
 
 .about {
     width: 35%;
-    line-height: 1.7em;
+    line-height: 2em;
 }
 
+footer ul li {
+    padding: 1em;
+}
+
+.social-media i {
+    font-size: 1.5em;
+    margin-left: 1em;
+}
+
+.contact-options {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact{
+    width: 11%;
+}
