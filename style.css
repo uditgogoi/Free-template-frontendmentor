@@ -287,6 +287,10 @@ footer ul li {
         justify-content: center;
         padding: 0;
     }
+
+    .intro {
+        height: auto;
+    }
     
     .intro-content-box {
         width: 98%;
