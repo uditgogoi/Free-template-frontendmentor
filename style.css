@@ -90,13 +90,9 @@ header {
 #navbar> h1 > img {
     width: 150px;
 }
-ul li {
-    list-style: none;
 
-}
-#navbar ul li {
-    display: inline-block;
-    margin-left: 2rem;
+.items {
+    margin-right: 1em;
 }
 
 #intro-view {
